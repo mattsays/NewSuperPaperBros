@@ -32,7 +32,7 @@ def main():
     parser.add_argument('--profile', choices=['us2', 'eu1'], default='us2')
     args = parser.parse_args()
     pal = args.profile == 'eu1'
-    app_name = 'New Super Paper Bros PAL' if pal else 'New Super Paper Bros'
+    app_name = 'New Super Paper Bros'
     bundle_id = 'org.newsuperpaperbros.macos.pal' if pal else 'org.newsuperpaperbros.macos'
     args.output_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='nspb-package-', dir=args.output_dir) as scratch:
@@ -54,7 +54,7 @@ def main():
         with engine_info.open('rb') as handle: values = plistlib.load(handle)
         values.update(CFBundleExecutable='nspb-engine', CFBundleIdentifier=bundle_id + '.game',
                       CFBundleName=app_name + ' Game', CFBundleDisplayName=app_name + ' Game',
-                      CFBundleIconFile='AppIcon.icns', CFBundleShortVersionString='1.0.2', CFBundleVersion='10204')
+                      CFBundleIconFile='AppIcon.icns', CFBundleShortVersionString='1.0.2', CFBundleVersion='10205')
         with engine_info.open('wb') as handle: plistlib.dump(values, handle)
         launcher = contents/'MacOS/NSPBLauncher'
         if args.launcher:
@@ -69,7 +69,7 @@ def main():
         values = dict(values)
         values.update(CFBundleExecutable='NSPBLauncher', CFBundleIdentifier=bundle_id,
                       CFBundleName=app_name, CFBundleDisplayName=app_name,
-                      CFBundleShortVersionString='1.0.2', CFBundleVersion='10204', CFBundleIconFile='AppIcon.icns',
+                      CFBundleShortVersionString='1.0.2', CFBundleVersion='10205', CFBundleIconFile='AppIcon.icns',
                       NSHumanReadableCopyright='Unofficial native macOS preview. Bring your own disc.',
                       NSBluetoothAlwaysUsageDescription='Connect a game controller to play.',
                       LSApplicationCategoryType='public.app-category.games')
@@ -98,7 +98,7 @@ def main():
             ('Native Apple Silicon preview for Super Paper Mario Europe revision 1.\n' if pal else
              'Native Apple Silicon preview for Super Paper Mario USA revision 2.\n') +
             'Choose a personal RVZ/ISO/WBFS/CISO dump or an extracted game folder.\n'
-            'Game data is not included in this application.\n' +
+            'Disc files are not bundled; a matching personal dump is required.\n' +
             ('Settings and saves: ~/Library/Application Support/NewSuperPaperBrosPAL\n' if pal else
              'Settings and saves: ~/Library/Application Support/NewSuperPaperBros\n') +
             'F10 opens settings; F11 switches full screen.\n'

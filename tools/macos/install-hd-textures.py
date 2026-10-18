@@ -14,7 +14,7 @@ AUTHOR = 'https://www.emutalk.net/threads/super-paper-mario.55330/'
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--app', type=Path, required=True, help='Path to New Super Paper Bros PAL.app or the USA app')
+    parser.add_argument('--app', type=Path, required=True, help='Path to New Super Paper Bros.app')
     parser.add_argument('--archive', type=Path, help='Use an already downloaded copy of the pinned archive')
     args = parser.parse_args()
     launcher = args.app.resolve()/'Contents/MacOS/NSPBLauncher'

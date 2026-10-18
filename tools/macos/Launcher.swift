@@ -205,7 +205,7 @@ final class Launcher: NSObject, NSApplicationDelegate {
     func makeWindow() {
         window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 600, height: isPAL ? 610 : 560),
                           styleMask: [.titled, .closable, .miniaturizable], backing: .buffered, defer: false)
-        window.title = isPAL ? "New Super Paper Bros. PAL" : "New Super Paper Bros."
+        window.title = "New Super Paper Bros."
         window.center()
         window.isReleasedWhenClosed = false
         let stack = NSStackView(); stack.orientation = .vertical; stack.alignment = .leading; stack.spacing = 18

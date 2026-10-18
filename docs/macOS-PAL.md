@@ -65,10 +65,10 @@ python3 tools/build-macos.py --profile eu1 \
   --symbols-root /percorso/spm-decomp
 ```
 
-Il risultato è `dist/macos/New Super Paper Bros PAL.app`. Il launcher non richiede .NET. Per installare le texture:
+Il risultato è `dist/macos/New Super Paper Bros.app`. Il nome visibile non contiene il suffisso PAL; l'identificatore interno e la cartella dei dati restano quelli PAL, preservando le impostazioni e i salvataggi esistenti. Il launcher non richiede .NET. Per installare le texture:
 
 ```sh
-python3 tools/macos/install-hd-textures.py --app "dist/macos/New Super Paper Bros PAL.app"
+python3 tools/macos/install-hd-textures.py --app "dist/macos/New Super Paper Bros.app"
 ```
 
 I dati del disco, il codice tradotto, le dipendenze scaricate e i runtime generati sono esclusi da Git. Il repository contiene il codice del port e i simboli pubblici, non gli eseguibili del disco.
