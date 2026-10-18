@@ -26,6 +26,8 @@ AGENTS.md
 
 # wiicompiled build output, downloaded dependencies and translator binaries
 /wiicompiled/generated/
+/wiicompiled/runtime-us2/
+/wiicompiled/native-build-macos*/
 /wiicompiled/native-build/
 /wiicompiled/build/
 /wiicompiled/Dependencies/
@@ -39,3 +41,6 @@ AGENTS.md
 __pycache__/
 *.pyc
 wiicompiled/buildtools/artifacts/
+
+/wiicompiled/runtime-eu1/
+/wiicompiled/native-build-eu1/

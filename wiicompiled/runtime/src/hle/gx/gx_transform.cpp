@@ -2,6 +2,8 @@
 // gx_transform.cpp - Viewport, Projection, and Matrix Functions
 #include "isa/big_endian.h"
 #include "gx_internal.h"
+#include "display_settings.h"
+#include "../../../../aurora-main/lib/gx/projection_aspect.hpp"
 
 #include <algorithm>
 #include <cstdio>
@@ -10,6 +12,52 @@
 #include <vector>
 
 namespace {
+    // US0 hudDisp, verified against the matching function boundaries in the
+    // public revision maps. prepare-spm-{us2,eu1}.py remaps both boundaries.
+    constexpr uint32_t kSpmHudDispBegin = 0x8019933Cu;
+    constexpr uint32_t kSpmHudDispEnd = 0x8019A104u;
+
+    bool InSpmHudDraw() {
+        const CpuContext* cpu = TryGetCpuContext();
+        if (!cpu) return false;
+        const auto inHud = [](uint32_t pc) { return pc >= kSpmHudDispBegin && pc < kSpmHudDispEnd; };
+        if (inHud(cpu->lr)) return true;
+        // Icons, numbers and text load their own matrices in nested helpers.
+        // Use the live PPC backchain to include those draws in the same HUD
+        // group, without moving other callers of the shared drawing helpers.
+        uint32_t sp = cpu->gpr[1];
+        for (int depth = 0; depth < 12; ++depth) {
+            uint32_t back = 0, lr = 0;
+            if ((sp & 3u) || !Memory::TryRead32(sp, back) || back <= sp ||
+                back - sp > 0x100000u || !Memory::TryRead32(back + 4, lr)) break;
+            if (inHud(lr)) return true;
+            sp = back;
+        }
+        return false;
+    }
+
+    void AnchorSpmHud(float* matrix) {
+        if (DisplaySettings::Current().aspect != DisplaySettings::kAspect16x10 ||
+            !DisplaySettings::GameWidescreen() ||
+            g_projectionVector[1] == 0.0f) return;
+        const float source = g_projectionVector[3] / g_projectionVector[1];
+        const bool screenSized = g_viewportState[2] >= 600.0f && g_viewportState[3] >= 440.0f;
+        // SPM draws its HUD through a perspective camera. Its icons and glyphs
+        // sit at different depths, so translate by clip W to give each one the
+        // same screen-space offset. Orthographic UI uses W = 1.
+        const float w = g_projectionVector[0] == 0.0f ? -matrix[11] : 1.0f;
+        const float offset = aurora::gx::projection_top_anchor_translation(
+            source, DisplaySettings::kRatio16x10, g_projectionVector[3], screenSized, w);
+        if (offset == 0.0f || w <= 0.0f || !InSpmHudDraw()) return;
+        matrix[7] += offset;
+        static const bool logHud = std::getenv("SPM_HUD_LOG") != nullptr;
+        static int logged = 0;
+        if (logHud && logged++ < 8) {
+            RT_LOGF(RT_TAG_GX, "[spmhud] top anchor offset %.3f, camera aspect %.4f, projection Y %.6f\n",
+                    offset, source, g_projectionVector[3]);
+        }
+    }
+
     static inline void SwapBeF32ArrayToHost(const uint32_t* srcBe, float* dst, size_t count) {
         const auto* bytes = reinterpret_cast<const uint8_t*>(srcBe);
         for (size_t i = 0; i < count; ++i) {
@@ -295,6 +343,7 @@ void SpmBBoxPosition(const float* p, int count) {
 extern "C" void GX__LoadPosMtxImm_8017310c(uint32_t ma, uint32_t id) {
     const uint32_t* raw=(const uint32_t*)GuestToHostPtr(ma); float m[12];
     SwapBeF32ArrayToHost(raw, m, 12);
+    AnchorSpmHud(m);
     if (id / 3u < 10u) std::memcpy(g_pnMtx[id / 3u], m, sizeof(m));
     GXLoadPosMtxImm((float(*)[4])m, id);
 }

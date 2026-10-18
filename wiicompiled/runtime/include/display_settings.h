@@ -13,6 +13,7 @@
 //                  instead of a stretched image.
 //   Cinematic    - a 2.39:1 picture (bars on narrower screens), the game's 16:9 view widened to it
 //                  (Hor+) the same way Fill does.
+//   16:10        - keeps the 16:9 width and adds vertical view for Mac displays.
 // Render resolution: 480 lines times the scale (1x = 480p, 2x = 960p, ...) in every aspect; the
 // width follows the aspect, so Fill at 1x on a 20:9 phone renders about 1070x480.
 //
@@ -20,8 +21,9 @@
 // effect on the next start; switching between 16:9 and Fill, and the resolution, apply at once.
 namespace DisplaySettings {
 
-enum Aspect : int32_t { kAspect4x3 = 0, kAspect16x9 = 1, kAspectFill = 2, kAspectCinematic = 3 };
+enum Aspect : int32_t { kAspect4x3 = 0, kAspect16x9 = 1, kAspectFill = 2, kAspectCinematic = 3, kAspect16x10 = 4 };
 constexpr float kRatioCinematic = 2.39f;
+constexpr float kRatio16x10 = 16.0f / 10.0f;
 
 struct Settings {
     int32_t aspect = kAspectFill;

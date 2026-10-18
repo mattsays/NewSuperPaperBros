@@ -1,0 +1,46 @@
+schema_version: 1
+workspace_root: ../..
+
+# Super Paper Mario, North America (R8PE01 rev 2): main.dol + relF.bin (pre-linked, see inputs.rel).
+project:
+  id: spm-r8pe01-rev2
+  display_name: Super Paper Mario (USA Rev 2)
+  game_id: R8PE01
+  region: E
+  base_manifest_format: spm-recomp-base-manifest
+  base_manifest_stem: spm_base
+
+memory:
+  base: 0x80000000
+  size: 0x01800000
+  sda_base: 0x80574900
+  sda2_base: 0x80575C60
+
+inputs:
+  dol:
+    path: ../game/us2/main.dol
+    sha256: 316fe3a88654cf55f164a493fdc7d872fb7362298613e335a2240b4921bfe7a0  # Clean USA Rev 2; original disc audio
+  # relF.bin pre-linked offline by projects/spm/tools/prelink_spm_rel.py at its boot heap address
+  # (image 0x80BF3F40, bss 0x80f0fe20: relmgr.c allocates both from HEAP_MAIN at boot).
+  rel:
+    path: ../game/us2/spm_linked.rel
+    load_address: 0x80BF3F40
+
+translation:
+  entry_points:
+    - 0x80006124
+  function_map:
+    path: projects/spm-us2/MAP.txt
+  allow_unsupported_instructions: false
+
+runtime:
+  native_registration_root: runtime-us2/src
+  native_abi_directories:
+    - runtime-us2/src/hle/gx
+
+output:
+  root: generated
+  functions: functions
+  runtime_config: RuntimeConfig.h
+  data_initializer: data_sections_init.cpp
+  base_manifest: ../build/base/spm_base_manifest.json

@@ -366,6 +366,9 @@ elseif(MKW_PLATFORM_ANDROID)
     # Cross-compiled, so -mcpu=native would describe the build machine. ARMv8.2-A (LSE atomics,
     # RCpc loads) is the floor of every Android phone since Cortex-A55/A75.
     set(MKW_BASELINE_ARCH_FLAG -march=armv8.2-a)
+elseif(MKW_PLATFORM_MACOS_ARM64)
+    # A distributable Mac build must also run on the first Apple Silicon Macs.
+    set(MKW_BASELINE_ARCH_FLAG -mcpu=apple-m1)
 elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "^(aarch64|arm64|ARM64)$")
     set(MKW_BASELINE_ARCH_FLAG -mcpu=native)
 else()

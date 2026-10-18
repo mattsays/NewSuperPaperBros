@@ -1,0 +1,2308 @@
+{
+  "experimental": true,
+  "source": "https://github.com/SeekyCt/spm-decomp",
+  "source_revision": "bb6e5f6ef84e4b13808e317d687e8990f6fd7be6",
+  "description": "USA Rev 0 to Rev 2 runtime address candidates; named anchors and size/type sequence alignment. Boot and gameplay validation required.",
+  "mapped": {
+    "802A3EE8": {
+      "to": "802A4754",
+      "basis": "layout-sequence",
+      "symbol": "fn_802A3D78"
+    },
+    "802A3EF4": {
+      "to": "802A4760",
+      "basis": "layout-sequence",
+      "symbol": "fn_802A3D78"
+    },
+    "805653D0": {
+      "to": "805670D0",
+      "basis": "layout-sequence",
+      "symbol": "lbl_805647A0"
+    },
+    "802A3F0C": {
+      "to": "802A4778",
+      "basis": "layout-sequence",
+      "symbol": "fn_802A3F0C"
+    },
+    "80506030": {
+      "to": "80507A30",
+      "basis": "anchored-order",
+      "symbol": "lbl_80506030"
+    },
+    "8056DBB0": {
+      "to": "8056D590",
+      "basis": "named",
+      "symbol": "RunQueueBits"
+    },
+    "8056DBAC": {
+      "to": "8056D58C",
+      "basis": "named",
+      "symbol": "RunQueueHint"
+    },
+    "8056DBA8": {
+      "to": "8056D588",
+      "basis": "named",
+      "symbol": "Reschedule"
+    },
+    "8056DD88": {
+      "to": "8056D768",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD88"
+    },
+    "8056DD8C": {
+      "to": "8056D76C",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD88"
+    },
+    "8000A000": {
+      "to": "80009FF8",
+      "basis": "layout-sequence",
+      "symbol": "@etb_8000A000"
+    },
+    "8000A400": {
+      "to": "8000A3F8",
+      "basis": "layout-sequence",
+      "symbol": "@etb_8000A400"
+    },
+    "801A6000": {
+      "to": "801A6374",
+      "basis": "layout-sequence",
+      "symbol": "fn_801A5F28"
+    },
+    "801A7000": {
+      "to": "801A7374",
+      "basis": "layout-sequence",
+      "symbol": "fn_801A6B04"
+    },
+    "801A5634": {
+      "to": "801A59A8",
+      "basis": "layout-sequence",
+      "symbol": "fn_801A5634"
+    },
+    "80261A5C": {
+      "to": "802621FC",
+      "basis": "anchored-order",
+      "symbol": "fn_80261A5C"
+    },
+    "80261650": {
+      "to": "80261DF0",
+      "basis": "anchored-order",
+      "symbol": "fn_80261650"
+    },
+    "80261724": {
+      "to": "80261EC4",
+      "basis": "anchored-order",
+      "symbol": "fn_80261724"
+    },
+    "80261BB4": {
+      "to": "80262354",
+      "basis": "anchored-order",
+      "symbol": "fn_80261BB4"
+    },
+    "8019BA28": {
+      "to": "8019BE94",
+      "basis": "layout-sequence",
+      "symbol": "fn_8019BA28"
+    },
+    "8019B7A8": {
+      "to": "8019BC14",
+      "basis": "layout-sequence",
+      "symbol": "fn_8019B7A8"
+    },
+    "8019B874": {
+      "to": "8019BCE0",
+      "basis": "layout-sequence",
+      "symbol": "fn_8019B874"
+    },
+    "80277934": {
+      "to": "80278220",
+      "basis": "anchored-order",
+      "symbol": "fn_80277934"
+    },
+    "80277A00": {
+      "to": "802782EC",
+      "basis": "anchored-order",
+      "symbol": "fn_80277A00"
+    },
+    "80278354": {
+      "to": "80278C40",
+      "basis": "anchored-order",
+      "symbol": "fn_80278354"
+    },
+    "80278978": {
+      "to": "80279264",
+      "basis": "anchored-order",
+      "symbol": "fn_80278978"
+    },
+    "802788B8": {
+      "to": "802791A4",
+      "basis": "anchored-order",
+      "symbol": "fn_802788B8"
+    },
+    "80277FBC": {
+      "to": "802788A8",
+      "basis": "anchored-order",
+      "symbol": "fn_80277FBC"
+    },
+    "80277E18": {
+      "to": "80278704",
+      "basis": "anchored-order",
+      "symbol": "fn_80277E18"
+    },
+    "80277E98": {
+      "to": "80278784",
+      "basis": "anchored-order",
+      "symbol": "fn_80277E98"
+    },
+    "80277BC0": {
+      "to": "802784AC",
+      "basis": "anchored-order",
+      "symbol": "fn_80277BC0"
+    },
+    "80278610": {
+      "to": "80278EFC",
+      "basis": "anchored-order",
+      "symbol": "fn_80278610"
+    },
+    "8056D0D8": {
+      "to": "8056CAB8",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D0D8"
+    },
+    "8056D0DC": {
+      "to": "8056CABC",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D0DC"
+    },
+    "8056D198": {
+      "to": "8056CB78",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D198"
+    },
+    "80004000": {
+      "to": "80004000",
+      "basis": "named",
+      "symbol": "memcpy"
+    },
+    "8056CFB0": {
+      "to": "8056C990",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056CFB0"
+    },
+    "8056D804": {
+      "to": "8056D1E4",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D804"
+    },
+    "8017B3C8": {
+      "to": "8017B834",
+      "basis": "layout-sequence",
+      "symbol": "fn_8017B3C8"
+    },
+    "800676E0": {
+      "to": "80067680",
+      "basis": "layout-sequence",
+      "symbol": "fn_800676E0"
+    },
+    "8056D010": {
+      "to": "8056C9F0",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D010"
+    },
+    "804CF364": {
+      "to": "804D0D64",
+      "basis": "layout-sequence",
+      "symbol": "lbl_804CF360"
+    },
+    "8056D1C0": {
+      "to": "8056CBA0",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D1C0"
+    },
+    "801214EC": {
+      "to": "8012191C",
+      "basis": "layout-sequence",
+      "symbol": "fn_801214EC"
+    },
+    "8056D1B8": {
+      "to": "8056CB98",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D1B8"
+    },
+    "80319180": {
+      "to": "80319E60",
+      "basis": "named",
+      "symbol": "__init_cpp_exceptions_reference"
+    },
+    "8042B084": {
+      "to": "8042C6B4",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8042AD88"
+    },
+    "8042A18C": {
+      "to": "8042B7BC",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8042A188"
+    },
+    "8042A1A0": {
+      "to": "8042B7D0",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8042A1A0"
+    },
+    "8042A3CC": {
+      "to": "8042B9FC",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8042A3C8"
+    },
+    "80377A10": {
+      "to": "803786F0",
+      "basis": "layout-sequence",
+      "symbol": "lbl_803728B0"
+    },
+    "80299BF8": {
+      "to": "8029A464",
+      "basis": "named",
+      "symbol": "_ES_GetDataDir"
+    },
+    "802960C4": {
+      "to": "80296930",
+      "basis": "named",
+      "symbol": "IOS_IoctlAsync"
+    },
+    "80295834": {
+      "to": "802960A0",
+      "basis": "named",
+      "symbol": "IOS_OpenAsync"
+    },
+    "80295A6C": {
+      "to": "802962D8",
+      "basis": "anchored-order",
+      "symbol": "fn_80295A6C"
+    },
+    "80295BD4": {
+      "to": "80296440",
+      "basis": "anchored-order",
+      "symbol": "fn_80295BD4"
+    },
+    "80295DDC": {
+      "to": "80296648",
+      "basis": "anchored-order",
+      "symbol": "fn_80295DDC"
+    },
+    "80295FE4": {
+      "to": "80296850",
+      "basis": "anchored-order",
+      "symbol": "fn_80295FE4"
+    },
+    "80296468": {
+      "to": "80296CD4",
+      "basis": "anchored-order",
+      "symbol": "fn_80296468"
+    },
+    "8029A014": {
+      "to": "8029A880",
+      "basis": "named",
+      "symbol": "SCCheckStatus"
+    },
+    "8029B8D8": {
+      "to": "8029C144",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029B8D8"
+    },
+    "804BA998": {
+      "to": "804BC1B8",
+      "basis": "layout-sequence",
+      "symbol": "lbl_804BA998"
+    },
+    "8029BE5C": {
+      "to": "8029C6C8",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029BE5C"
+    },
+    "804BA9E0": {
+      "to": "804BC200",
+      "basis": "layout-sequence",
+      "symbol": "lbl_804BA9E0"
+    },
+    "8025E220": {
+      "to": "8025E9C0",
+      "basis": "anchored-order",
+      "symbol": "fn_8025E220"
+    },
+    "8056DD00": {
+      "to": "8056D6E0",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD00"
+    },
+    "8056DD70": {
+      "to": "8056D750",
+      "basis": "named",
+      "symbol": "CurrTvMode"
+    },
+    "8050BAF4": {
+      "to": "8050D4F4",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050BAF0"
+    },
+    "8050BAF6": {
+      "to": "8050D4F6",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050BAF0"
+    },
+    "8050BB02": {
+      "to": "8050D502",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050BAF0"
+    },
+    "8050BB0C": {
+      "to": "8050D50C",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050BAF0"
+    },
+    "8056DDAC": {
+      "to": "8056D78C",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DDAC"
+    },
+    "8056DD0C": {
+      "to": "8056D6EC",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD0C"
+    },
+    "8056DD80": {
+      "to": "8056D760",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD80"
+    },
+    "8056DD7C": {
+      "to": "8056D75C",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD7C"
+    },
+    "8056DD68": {
+      "to": "8056D748",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DD68"
+    },
+    "8050BB20": {
+      "to": "8050D520",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050BAF0"
+    },
+    "80319200": {
+      "to": "80319EE0",
+      "basis": "layout-sequence",
+      "symbol": "lbl_80319200"
+    },
+    "8056E280": {
+      "to": "8056DC60",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8056E280"
+    },
+    "80428730": {
+      "to": "80429D60",
+      "basis": "layout-sequence",
+      "symbol": "lbl_804286D8"
+    },
+    "802808C4": {
+      "to": "802811B0",
+      "basis": "anchored-order",
+      "symbol": "fn_802808C4"
+    },
+    "802806B4": {
+      "to": "80280FA0",
+      "basis": "anchored-order",
+      "symbol": "fn_802806B4"
+    },
+    "80280524": {
+      "to": "80280E10",
+      "basis": "anchored-order",
+      "symbol": "fn_80280524"
+    },
+    "80280568": {
+      "to": "80280E54",
+      "basis": "anchored-order",
+      "symbol": "fn_80280568"
+    },
+    "8028217C": {
+      "to": "80282A68",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028217C"
+    },
+    "802812A8": {
+      "to": "80281B94",
+      "basis": "anchored-order",
+      "symbol": "fn_802812A8"
+    },
+    "80281D90": {
+      "to": "8028267C",
+      "basis": "anchored-order",
+      "symbol": "fn_80281D90"
+    },
+    "80281EA4": {
+      "to": "80282790",
+      "basis": "anchored-order",
+      "symbol": "fn_80281EA4"
+    },
+    "80281F10": {
+      "to": "802827FC",
+      "basis": "anchored-order",
+      "symbol": "fn_80281F10"
+    },
+    "80281F88": {
+      "to": "80282874",
+      "basis": "anchored-order",
+      "symbol": "fn_80281F88"
+    },
+    "80281F90": {
+      "to": "8028287C",
+      "basis": "anchored-order",
+      "symbol": "fn_80281F90"
+    },
+    "8028202C": {
+      "to": "80282918",
+      "basis": "anchored-order",
+      "symbol": "fn_8028202C"
+    },
+    "80280E0C": {
+      "to": "802816F8",
+      "basis": "anchored-order",
+      "symbol": "fn_80280E0C"
+    },
+    "8028211C": {
+      "to": "80282A08",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028211C"
+    },
+    "80505D18": {
+      "to": "80507718",
+      "basis": "named",
+      "symbol": "DefaultThread"
+    },
+    "802CCBB4": {
+      "to": "802CD5DC",
+      "basis": "layout-sequence",
+      "symbol": "fn_802CCBB4"
+    },
+    "802D0874": {
+      "to": "802D1198",
+      "basis": "layout-sequence",
+      "symbol": "fn_802D0874"
+    },
+    "802D97B0": {
+      "to": "802DA4C8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802D97B0"
+    },
+    "802CE3CC": {
+      "to": "802CEA54",
+      "basis": "layout-sequence",
+      "symbol": "fn_802CE3CC"
+    },
+    "802CE414": {
+      "to": "802CEA9C",
+      "basis": "layout-sequence",
+      "symbol": "fn_802CE414"
+    },
+    "802CE208": {
+      "to": "802CE890",
+      "basis": "layout-sequence",
+      "symbol": "fn_802CE208"
+    },
+    "802CE684": {
+      "to": "802CEDC0",
+      "basis": "layout-sequence",
+      "symbol": "fn_802CE684"
+    },
+    "802CCBA8": {
+      "to": "802CD5D0",
+      "basis": "layout-sequence",
+      "symbol": "fn_802CCBA8"
+    },
+    "8029594C": {
+      "to": "802961B8",
+      "basis": "named",
+      "symbol": "IOS_Open"
+    },
+    "80295B2C": {
+      "to": "80296398",
+      "basis": "named",
+      "symbol": "IOS_Close"
+    },
+    "80295CD4": {
+      "to": "80296540",
+      "basis": "anchored-order",
+      "symbol": "fn_80295CD4"
+    },
+    "80295EDC": {
+      "to": "80296748",
+      "basis": "anchored-order",
+      "symbol": "fn_80295EDC"
+    },
+    "802961FC": {
+      "to": "80296A68",
+      "basis": "anchored-order",
+      "symbol": "fn_802961FC"
+    },
+    "80293C70": {
+      "to": "802944DC",
+      "basis": "named",
+      "symbol": "ISFS_OpenLib"
+    },
+    "802950F0": {
+      "to": "8029595C",
+      "basis": "named",
+      "symbol": "IPCSetBufferLo"
+    },
+    "80296710": {
+      "to": "80296F7C",
+      "basis": "named",
+      "symbol": "iosCreateHeap"
+    },
+    "8029654C": {
+      "to": "80296DB8",
+      "basis": "named",
+      "symbol": "IOS_Ioctlv"
+    },
+    "80522780": {
+      "to": "80524180",
+      "basis": "named",
+      "symbol": "s_homeDir"
+    },
+    "8056E030": {
+      "to": "8056DA10",
+      "basis": "named",
+      "symbol": "s_libState"
+    },
+    "80298CE8": {
+      "to": "80299554",
+      "basis": "named",
+      "symbol": "NANDInit"
+    },
+    "80297AAC": {
+      "to": "80298318",
+      "basis": "anchored-order",
+      "symbol": "fn_80297AAC"
+    },
+    "80297D2C": {
+      "to": "80298598",
+      "basis": "anchored-order",
+      "symbol": "fn_80297D2C"
+    },
+    "80297258": {
+      "to": "80297AC4",
+      "basis": "anchored-order",
+      "symbol": "fn_80297258"
+    },
+    "80297338": {
+      "to": "80297BA4",
+      "basis": "anchored-order",
+      "symbol": "fn_80297338"
+    },
+    "80297010": {
+      "to": "8029787C",
+      "basis": "anchored-order",
+      "symbol": "fn_80297010"
+    },
+    "80297BC4": {
+      "to": "80298430",
+      "basis": "anchored-order",
+      "symbol": "fn_80297BC4"
+    },
+    "80297D98": {
+      "to": "80298604",
+      "basis": "anchored-order",
+      "symbol": "fn_80297D98"
+    },
+    "802972C0": {
+      "to": "80297B2C",
+      "basis": "anchored-order",
+      "symbol": "fn_802972C0"
+    },
+    "802973A0": {
+      "to": "80297C0C",
+      "basis": "anchored-order",
+      "symbol": "fn_802973A0"
+    },
+    "80297418": {
+      "to": "80297C84",
+      "basis": "anchored-order",
+      "symbol": "fn_80297418"
+    },
+    "80297C3C": {
+      "to": "802984A8",
+      "basis": "named",
+      "symbol": "NANDPrivateOpenAsync"
+    },
+    "80296F98": {
+      "to": "80297804",
+      "basis": "anchored-order",
+      "symbol": "fn_80296F98"
+    },
+    "802975F4": {
+      "to": "80297E60",
+      "basis": "anchored-order",
+      "symbol": "fn_802975F4"
+    },
+    "80297198": {
+      "to": "80297A04",
+      "basis": "anchored-order",
+      "symbol": "fn_80297198"
+    },
+    "80297914": {
+      "to": "80298180",
+      "basis": "anchored-order",
+      "symbol": "fn_80297914"
+    },
+    "802998F0": {
+      "to": "8029A15C",
+      "basis": "anchored-order",
+      "symbol": "fn_802998F0"
+    },
+    "8029837C": {
+      "to": "80298BE8",
+      "basis": "anchored-order",
+      "symbol": "fn_8029837C"
+    },
+    "80297E20": {
+      "to": "8029868C",
+      "basis": "anchored-order",
+      "symbol": "fn_80297E20"
+    },
+    "80296F20": {
+      "to": "8029778C",
+      "basis": "anchored-order",
+      "symbol": "fn_80296F20"
+    },
+    "802970C0": {
+      "to": "8029792C",
+      "basis": "anchored-order",
+      "symbol": "fn_802970C0"
+    },
+    "80299C94": {
+      "to": "8029A500",
+      "basis": "anchored-order",
+      "symbol": "fn_80299C94"
+    },
+    "802992C8": {
+      "to": "80299B34",
+      "basis": "anchored-order",
+      "symbol": "fn_802992C8"
+    },
+    "8050B690": {
+      "to": "8050D090",
+      "basis": "named",
+      "symbol": "WaitingQueue"
+    },
+    "8056DC50": {
+      "to": "8056D630",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DC50"
+    },
+    "8056DC54": {
+      "to": "8056D634",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DC54"
+    },
+    "8056DC48": {
+      "to": "8056D628",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DC48"
+    },
+    "8056DC84": {
+      "to": "8056D664",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DC84"
+    },
+    "8056DCC0": {
+      "to": "8056D6A0",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DCC0"
+    },
+    "8056DCE4": {
+      "to": "8056D6C4",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DCE4"
+    },
+    "8056DCE5": {
+      "to": "8056D6C5",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DCE5"
+    },
+    "8056DCE0": {
+      "to": "8056D6C0",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DCE0"
+    },
+    "8056DC7C": {
+      "to": "8056D65C",
+      "basis": "named",
+      "symbol": "DVDInitialized"
+    },
+    "8050B8A0": {
+      "to": "8050D2A0",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050B8A0"
+    },
+    "80278F44": {
+      "to": "80279830",
+      "basis": "named",
+      "symbol": "__DVDFSInit"
+    },
+    "802795D8": {
+      "to": "80279EC4",
+      "basis": "named",
+      "symbol": "DVDInit"
+    },
+    "802793F0": {
+      "to": "80279CDC",
+      "basis": "anchored-order",
+      "symbol": "fn_802793F0"
+    },
+    "80279308": {
+      "to": "80279BF4",
+      "basis": "anchored-order",
+      "symbol": "fn_80279308"
+    },
+    "8027CF08": {
+      "to": "8027D7F4",
+      "basis": "anchored-order",
+      "symbol": "fn_8027CF08"
+    },
+    "8027E308": {
+      "to": "8027EBF4",
+      "basis": "named",
+      "symbol": "DVDLowInit"
+    },
+    "8027EDE8": {
+      "to": "8027F6D4",
+      "basis": "anchored-order",
+      "symbol": "fn_8027EDE8"
+    },
+    "8027E56C": {
+      "to": "8027EE58",
+      "basis": "anchored-order",
+      "symbol": "fn_8027E56C"
+    },
+    "8027F554": {
+      "to": "8027FE40",
+      "basis": "anchored-order",
+      "symbol": "fn_8027F554"
+    },
+    "8027EAC0": {
+      "to": "8027F3AC",
+      "basis": "anchored-order",
+      "symbol": "fn_8027EAC0"
+    },
+    "8027FA14": {
+      "to": "80280300",
+      "basis": "anchored-order",
+      "symbol": "fn_8027FA14"
+    },
+    "8056DF58": {
+      "to": "8056D938",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF58"
+    },
+    "8050FD00": {
+      "to": "80511700",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050FD00"
+    },
+    "8056DF48": {
+      "to": "8056D928",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF48"
+    },
+    "8056DF50": {
+      "to": "8056D930",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF50"
+    },
+    "8056DF54": {
+      "to": "8056D934",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF54"
+    },
+    "8056DF5C": {
+      "to": "8056D93C",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF5C"
+    },
+    "8056DF60": {
+      "to": "8056D940",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF60"
+    },
+    "8056DF64": {
+      "to": "8056D944",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF64"
+    },
+    "804B7780": {
+      "to": "804B8FA0",
+      "basis": "layout-sequence",
+      "symbol": "lbl_804B7780"
+    },
+    "8050FD60": {
+      "to": "80511760",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8050FD60"
+    },
+    "80286698": {
+      "to": "802870A8",
+      "basis": "layout-sequence",
+      "symbol": "fn_80286698"
+    },
+    "802866A4": {
+      "to": "802870B4",
+      "basis": "layout-sequence",
+      "symbol": "fn_802866A4"
+    },
+    "802866F8": {
+      "to": "80287108",
+      "basis": "layout-sequence",
+      "symbol": "fn_802866F8"
+    },
+    "80286708": {
+      "to": "80287118",
+      "basis": "layout-sequence",
+      "symbol": "fn_80286708"
+    },
+    "8056DDD0": {
+      "to": "8056D7B0",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DDD0"
+    },
+    "8056DDD4": {
+      "to": "8056D7B4",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DDD4"
+    },
+    "8056DE04": {
+      "to": "8056D7E4",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DE04"
+    },
+    "8056DE08": {
+      "to": "8056D7E8",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DE08"
+    },
+    "8026D30C": {
+      "to": "8026DAAC",
+      "basis": "named",
+      "symbol": "__AIClockInit"
+    },
+    "8026D52C": {
+      "to": "8026DCCC",
+      "basis": "named",
+      "symbol": "__OSInitAudioSystem"
+    },
+    "8026D6F4": {
+      "to": "8026DE94",
+      "basis": "anchored-order",
+      "symbol": "fn_8026D6F4"
+    },
+    "8028479C": {
+      "to": "8028509C",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028479C"
+    },
+    "80288E28": {
+      "to": "802898B4",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288E28"
+    },
+    "80288EE8": {
+      "to": "80289974",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288EE8"
+    },
+    "80288EF0": {
+      "to": "8028997C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288EF0"
+    },
+    "80289644": {
+      "to": "8028A110",
+      "basis": "layout-sequence",
+      "symbol": "fn_80289644"
+    },
+    "8028670C": {
+      "to": "8028711C",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028670C"
+    },
+    "802846FC": {
+      "to": "80284FE8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802846FC"
+    },
+    "802846B8": {
+      "to": "80284FA4",
+      "basis": "layout-sequence",
+      "symbol": "fn_802846B8"
+    },
+    "80284778": {
+      "to": "80285064",
+      "basis": "layout-sequence",
+      "symbol": "fn_80284778"
+    },
+    "8028478C": {
+      "to": "8028508C",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028478C"
+    },
+    "80288E14": {
+      "to": "802898A0",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288E14"
+    },
+    "80288DE0": {
+      "to": "8028986C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288DE0"
+    },
+    "80288DF0": {
+      "to": "8028987C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288DF0"
+    },
+    "80288E00": {
+      "to": "8028988C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288E00"
+    },
+    "80288F60": {
+      "to": "80289A2C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80288F60"
+    },
+    "80576060": {
+      "to": "80575A48",
+      "basis": "layout-sequence",
+      "symbol": "lbl_80576060"
+    },
+    "80576064": {
+      "to": "80575A4C",
+      "basis": "layout-sequence",
+      "symbol": "lbl_80576064"
+    },
+    "802BB820": {
+      "to": "802BC08C",
+      "basis": "layout-sequence",
+      "symbol": "fn_802BB7BC"
+    },
+    "802BAED0": {
+      "to": "802BB73C",
+      "basis": "layout-sequence",
+      "symbol": "fn_802BAE38"
+    },
+    "801C51B0": {
+      "to": "801C5524",
+      "basis": "layout-sequence",
+      "symbol": "fn_801C40C0"
+    },
+    "80576098": {
+      "to": "80575A80",
+      "basis": "named",
+      "symbol": "__GXData"
+    },
+    "80521E70": {
+      "to": "80523870",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "80521E84": {
+      "to": "80523884",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "80521E8C": {
+      "to": "8052388C",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "8056DFB8": {
+      "to": "8056D998",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DFB8"
+    },
+    "802904B4": {
+      "to": "80290F80",
+      "basis": "layout-sequence",
+      "symbol": "fn_802904B4"
+    },
+    "8028FE58": {
+      "to": "80290924",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028FE58"
+    },
+    "80290358": {
+      "to": "80290E24",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290358"
+    },
+    "8028FEEC": {
+      "to": "802909B8",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028FEEC"
+    },
+    "8028FF2C": {
+      "to": "802909F8",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028FF2C"
+    },
+    "8028FF6C": {
+      "to": "80290A38",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028FF6C"
+    },
+    "8028FFC4": {
+      "to": "80290A90",
+      "basis": "layout-sequence",
+      "symbol": "fn_8028FFC4"
+    },
+    "8004ED88": {
+      "to": "8004ED28",
+      "basis": "layout-sequence",
+      "symbol": "fn_8004EB4C"
+    },
+    "8056CF80": {
+      "to": "8056C960",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056CF80"
+    },
+    "8056F21C": {
+      "to": "8056EBFC",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8056F21C"
+    },
+    "8056F220": {
+      "to": "8056EC00",
+      "basis": "layout-sequence",
+      "symbol": "lbl_8056F220"
+    },
+    "8029001C": {
+      "to": "80290AE8",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029001C"
+    },
+    "8029007C": {
+      "to": "80290B48",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029007C"
+    },
+    "802900E0": {
+      "to": "80290BAC",
+      "basis": "layout-sequence",
+      "symbol": "fn_802900E0"
+    },
+    "8029013C": {
+      "to": "80290C08",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029013C"
+    },
+    "8029018C": {
+      "to": "80290C58",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029018C"
+    },
+    "80290218": {
+      "to": "80290CE4",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290218"
+    },
+    "802901DC": {
+      "to": "80290CA8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802901DC"
+    },
+    "8028FD44": {
+      "to": "80290810",
+      "basis": "anchored-order",
+      "symbol": "fn_8028FD44"
+    },
+    "8028FC78": {
+      "to": "80290744",
+      "basis": "anchored-order",
+      "symbol": "fn_8028FC78"
+    },
+    "8028FB74": {
+      "to": "80290640",
+      "basis": "anchored-order",
+      "symbol": "fn_8028FB74"
+    },
+    "8028FA20": {
+      "to": "802904EC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028FA20"
+    },
+    "8028FD64": {
+      "to": "80290830",
+      "basis": "anchored-order",
+      "symbol": "fn_8028FD64"
+    },
+    "8028FDAC": {
+      "to": "80290878",
+      "basis": "anchored-order",
+      "symbol": "fn_8028FDAC"
+    },
+    "8028F9B8": {
+      "to": "80290484",
+      "basis": "anchored-order",
+      "symbol": "fn_8028F9B8"
+    },
+    "8028D82C": {
+      "to": "8028E2F8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D82C"
+    },
+    "8028D8AC": {
+      "to": "8028E378",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D8AC"
+    },
+    "8028D86C": {
+      "to": "8028E338",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D86C"
+    },
+    "8028D8D0": {
+      "to": "8028E39C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D8D0"
+    },
+    "8028DDA8": {
+      "to": "8028E874",
+      "basis": "anchored-order",
+      "symbol": "fn_8028DDA8"
+    },
+    "8028DF8C": {
+      "to": "8028EA58",
+      "basis": "anchored-order",
+      "symbol": "fn_8028DF8C"
+    },
+    "8028DFA0": {
+      "to": "8028EA6C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028DFA0"
+    },
+    "8028E0DC": {
+      "to": "8028EBA8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E0DC"
+    },
+    "8028DC64": {
+      "to": "8028E730",
+      "basis": "anchored-order",
+      "symbol": "fn_8028DC64"
+    },
+    "8028DA34": {
+      "to": "8028E500",
+      "basis": "anchored-order",
+      "symbol": "fn_8028DA34"
+    },
+    "80290828": {
+      "to": "802912F4",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290828"
+    },
+    "80290878": {
+      "to": "80291344",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290878"
+    },
+    "802908A4": {
+      "to": "80291370",
+      "basis": "layout-sequence",
+      "symbol": "fn_802908A4"
+    },
+    "802908D0": {
+      "to": "8029139C",
+      "basis": "layout-sequence",
+      "symbol": "fn_802908D0"
+    },
+    "80290904": {
+      "to": "802913D0",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290904"
+    },
+    "80290934": {
+      "to": "80291400",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290934"
+    },
+    "802909DC": {
+      "to": "802914A8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802909DC"
+    },
+    "80290A08": {
+      "to": "802914D4",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290A08"
+    },
+    "802904D8": {
+      "to": "80290FA4",
+      "basis": "layout-sequence",
+      "symbol": "fn_802904D8"
+    },
+    "80290294": {
+      "to": "80290D60",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290294"
+    },
+    "802902CC": {
+      "to": "80290D98",
+      "basis": "layout-sequence",
+      "symbol": "fn_802902CC"
+    },
+    "80080000": {
+      "to": "8007FFA0",
+      "basis": "layout-sequence",
+      "symbol": "fn_8007FCF8"
+    },
+    "8008C000": {
+      "to": "8008BFA0",
+      "basis": "layout-sequence",
+      "symbol": "fn_8008BBF0"
+    },
+    "8028D67C": {
+      "to": "8028E148",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D67C"
+    },
+    "8028D6C0": {
+      "to": "8028E18C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D6C0"
+    },
+    "80291B38": {
+      "to": "80292604",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291B38"
+    },
+    "8028E54C": {
+      "to": "8028F018",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E54C"
+    },
+    "8028E5C8": {
+      "to": "8028F094",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E5C8"
+    },
+    "8028E6A0": {
+      "to": "8028F16C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E6A0"
+    },
+    "8028E778": {
+      "to": "8028F244",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E778"
+    },
+    "8008A6AC": {
+      "to": "8008A64C",
+      "basis": "layout-sequence",
+      "symbol": "fn_8008A1B4"
+    },
+    "8028E79C": {
+      "to": "8028F268",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E79C"
+    },
+    "8028D6A4": {
+      "to": "8028E170",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D6A4"
+    },
+    "8028CADC": {
+      "to": "8028D5A8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CADC"
+    },
+    "8028CE58": {
+      "to": "8028D924",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CE58"
+    },
+    "8028CE68": {
+      "to": "8028D934",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CE68"
+    },
+    "8028CE80": {
+      "to": "8028D94C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CE80"
+    },
+    "8028CE94": {
+      "to": "8028D960",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CE94"
+    },
+    "8028CEF0": {
+      "to": "8028D9BC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CEF0"
+    },
+    "8028CF04": {
+      "to": "8028D9D0",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CF04"
+    },
+    "8028CF1C": {
+      "to": "8028D9E8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CF1C"
+    },
+    "8028CF30": {
+      "to": "8028D9FC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CF30"
+    },
+    "80291994": {
+      "to": "80292460",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291994"
+    },
+    "802919D0": {
+      "to": "8029249C",
+      "basis": "layout-sequence",
+      "symbol": "fn_802919D0"
+    },
+    "802919FC": {
+      "to": "802924C8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802919FC"
+    },
+    "80291AFC": {
+      "to": "802925C8",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291AFC"
+    },
+    "80291A4C": {
+      "to": "80292518",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291A4C"
+    },
+    "80291698": {
+      "to": "80292164",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291698"
+    },
+    "802916FC": {
+      "to": "802921C8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802916FC"
+    },
+    "80291748": {
+      "to": "80292214",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291748"
+    },
+    "80291788": {
+      "to": "80292254",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291788"
+    },
+    "802917D8": {
+      "to": "802922A4",
+      "basis": "layout-sequence",
+      "symbol": "fn_802917D8"
+    },
+    "80291850": {
+      "to": "8029231C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291850"
+    },
+    "80291830": {
+      "to": "802922FC",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291830"
+    },
+    "80291458": {
+      "to": "80291F24",
+      "basis": "layout-sequence",
+      "symbol": "fn_80291458"
+    },
+    "8028EA24": {
+      "to": "8028F4F0",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EA24"
+    },
+    "8028EC30": {
+      "to": "8028F6FC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EC30"
+    },
+    "8028EC78": {
+      "to": "8028F744",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EC78"
+    },
+    "8028ED8C": {
+      "to": "8028F858",
+      "basis": "anchored-order",
+      "symbol": "fn_8028ED8C"
+    },
+    "8028EDA0": {
+      "to": "8028F86C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EDA0"
+    },
+    "8028EDA8": {
+      "to": "8028F874",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EDA8"
+    },
+    "8028EF78": {
+      "to": "8028FA44",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EF78"
+    },
+    "8028EE14": {
+      "to": "8028F8E0",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EE14"
+    },
+    "8028EFCC": {
+      "to": "8028FA98",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EFCC"
+    },
+    "8028EFF4": {
+      "to": "8028FAC0",
+      "basis": "anchored-order",
+      "symbol": "fn_8028EFF4"
+    },
+    "8028F198": {
+      "to": "8028FC64",
+      "basis": "anchored-order",
+      "symbol": "fn_8028F198"
+    },
+    "8028ED7C": {
+      "to": "8028F848",
+      "basis": "anchored-order",
+      "symbol": "fn_8028ED7C"
+    },
+    "80521520": {
+      "to": "80522F20",
+      "basis": "named",
+      "symbol": "FifoObj"
+    },
+    "805215A0": {
+      "to": "80522FA0",
+      "basis": "anchored-order",
+      "symbol": "lbl_805215A0"
+    },
+    "80289CB4": {
+      "to": "8028A780",
+      "basis": "named",
+      "symbol": "GXInit"
+    },
+    "8028ADAC": {
+      "to": "8028B878",
+      "basis": "named",
+      "symbol": "GXSetCPUFifo"
+    },
+    "8028AF8C": {
+      "to": "8028BA58",
+      "basis": "named",
+      "symbol": "GXSetGPFifo"
+    },
+    "8028B21C": {
+      "to": "8028BCE8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028B21C"
+    },
+    "8028B324": {
+      "to": "8028BDF0",
+      "basis": "anchored-order",
+      "symbol": "fn_8028B324"
+    },
+    "8028AAC8": {
+      "to": "8028B594",
+      "basis": "anchored-order",
+      "symbol": "fn_8028AAC8"
+    },
+    "8056DFA4": {
+      "to": "8056D984",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DFA4"
+    },
+    "8056DFA0": {
+      "to": "8056D980",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DFA0"
+    },
+    "80521BC4": {
+      "to": "805235C4",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521BC4"
+    },
+    "80521BA0": {
+      "to": "805235A0",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521BA0"
+    },
+    "8056DF90": {
+      "to": "8056D970",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF90"
+    },
+    "8056DF91": {
+      "to": "8056D971",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DF91"
+    },
+    "8028CF90": {
+      "to": "8028DA5C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CF90"
+    },
+    "8028D058": {
+      "to": "8028DB24",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D058"
+    },
+    "8056DFB0": {
+      "to": "8056D990",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056DFB0"
+    },
+    "8028D0D8": {
+      "to": "8028DBA4",
+      "basis": "named",
+      "symbol": "__GXPEInit"
+    },
+    "80521EF0": {
+      "to": "805238F0",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "80521E74": {
+      "to": "80523874",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "80521E78": {
+      "to": "80523878",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "80521E88": {
+      "to": "80523888",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "805224F0": {
+      "to": "80523EF0",
+      "basis": "anchored-order",
+      "symbol": "lbl_80521E70"
+    },
+    "802912FC": {
+      "to": "80291DC8",
+      "basis": "layout-sequence",
+      "symbol": "fn_802912FC"
+    },
+    "802913AC": {
+      "to": "80291E78",
+      "basis": "layout-sequence",
+      "symbol": "fn_802913AC"
+    },
+    "8028C8E8": {
+      "to": "8028D3B4",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C8E8"
+    },
+    "8028BEC8": {
+      "to": "8028C994",
+      "basis": "anchored-order",
+      "symbol": "fn_8028BEC8"
+    },
+    "8028B638": {
+      "to": "8028C104",
+      "basis": "anchored-order",
+      "symbol": "fn_8028B638"
+    },
+    "8028B89C": {
+      "to": "8028C368",
+      "basis": "anchored-order",
+      "symbol": "fn_8028B89C"
+    },
+    "8028BC84": {
+      "to": "8028C750",
+      "basis": "anchored-order",
+      "symbol": "fn_8028BC84"
+    },
+    "8028BE38": {
+      "to": "8028C904",
+      "basis": "anchored-order",
+      "symbol": "fn_8028BE38"
+    },
+    "8028BEFC": {
+      "to": "8028C9C8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028BEFC"
+    },
+    "8028C09C": {
+      "to": "8028CB68",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C09C"
+    },
+    "8028C2E0": {
+      "to": "8028CDAC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C2E0"
+    },
+    "8028C54C": {
+      "to": "8028D018",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C54C"
+    },
+    "8028C5C0": {
+      "to": "8028D08C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C5C0"
+    },
+    "8028C838": {
+      "to": "8028D304",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C838"
+    },
+    "8028C610": {
+      "to": "8028D0DC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C610"
+    },
+    "8028D640": {
+      "to": "8028E10C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D640"
+    },
+    "8028D5D8": {
+      "to": "8028E0A4",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D5D8"
+    },
+    "8028D60C": {
+      "to": "8028E0D8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D60C"
+    },
+    "8028D3B4": {
+      "to": "8028DE80",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D3B4"
+    },
+    "80290ADC": {
+      "to": "802915A8",
+      "basis": "layout-sequence",
+      "symbol": "fn_80290ADC"
+    },
+    "8056DF70": {
+      "to": "8056D950",
+      "basis": "named",
+      "symbol": "__peReg"
+    },
+    "8028CC90": {
+      "to": "8028D75C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CC90"
+    },
+    "8028CD50": {
+      "to": "8028D81C",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CD50"
+    },
+    "8028CE10": {
+      "to": "8028D8DC",
+      "basis": "anchored-order",
+      "symbol": "fn_8028CE10"
+    },
+    "80289B84": {
+      "to": "8028A650",
+      "basis": "named",
+      "symbol": "__GXInitRevisionBits"
+    },
+    "8028F4FC": {
+      "to": "8028FFC8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028F4FC"
+    },
+    "8028F664": {
+      "to": "80290130",
+      "basis": "named",
+      "symbol": "__GXSetTmemConfig"
+    },
+    "8028FE34": {
+      "to": "80290900",
+      "basis": "named",
+      "symbol": "__GXFlushTextureState"
+    },
+    "8028D9EC": {
+      "to": "8028E4B8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D9EC"
+    },
+    "8028DA0C": {
+      "to": "8028E4D8",
+      "basis": "anchored-order",
+      "symbol": "fn_8028DA0C"
+    },
+    "8028E234": {
+      "to": "8028ED00",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E234"
+    },
+    "8028E26C": {
+      "to": "8028ED38",
+      "basis": "anchored-order",
+      "symbol": "fn_8028E26C"
+    },
+    "8028D13C": {
+      "to": "8028DC08",
+      "basis": "anchored-order",
+      "symbol": "fn_8028D13C"
+    },
+    "8028C944": {
+      "to": "8028D410",
+      "basis": "anchored-order",
+      "symbol": "fn_8028C944"
+    },
+    "802757F4": {
+      "to": "802760E0",
+      "basis": "named",
+      "symbol": "OSSleepThread"
+    },
+    "80274C24": {
+      "to": "802753D0",
+      "basis": "named",
+      "symbol": "SelectThread"
+    },
+    "802758E0": {
+      "to": "802761CC",
+      "basis": "anchored-order",
+      "symbol": "fn_802758E0"
+    },
+    "8027322C": {
+      "to": "802739D8",
+      "basis": "anchored-order",
+      "symbol": "fn_8027322C"
+    },
+    "80273308": {
+      "to": "80273AB4",
+      "basis": "anchored-order",
+      "symbol": "fn_80273308"
+    },
+    "802716B8": {
+      "to": "80271E28",
+      "basis": "named",
+      "symbol": "OSDisableInterrupts"
+    },
+    "802716CC": {
+      "to": "80271E3C",
+      "basis": "named",
+      "symbol": "OSEnableInterrupts"
+    },
+    "802716E0": {
+      "to": "80271E50",
+      "basis": "named",
+      "symbol": "OSRestoreInterrupts"
+    },
+    "80271728": {
+      "to": "80271E98",
+      "basis": "named",
+      "symbol": "__OSInterruptInit"
+    },
+    "802717EC": {
+      "to": "80271F5C",
+      "basis": "named",
+      "symbol": "SetInterruptMask"
+    },
+    "8026C3E0": {
+      "to": "8026CB80",
+      "basis": "named",
+      "symbol": "OSExceptionInit"
+    },
+    "80269128": {
+      "to": "802698C8",
+      "basis": "named",
+      "symbol": "EXIInit"
+    },
+    "80271704": {
+      "to": "80271E74",
+      "basis": "named",
+      "symbol": "__OSSetInterruptHandler"
+    },
+    "80271AC8": {
+      "to": "80272238",
+      "basis": "named",
+      "symbol": "__OSUnmaskInterrupts"
+    },
+    "80271A48": {
+      "to": "802721B8",
+      "basis": "named",
+      "symbol": "__OSMaskInterrupts"
+    },
+    "80268B58": {
+      "to": "802692F8",
+      "basis": "named",
+      "symbol": "EXISelect"
+    },
+    "80268C88": {
+      "to": "80269428",
+      "basis": "named",
+      "symbol": "EXIDeselect"
+    },
+    "80268000": {
+      "to": "802687A0",
+      "basis": "named",
+      "symbol": "SetExiInterruptMask"
+    },
+    "80276544": {
+      "to": "80276E30",
+      "basis": "named",
+      "symbol": "__OSDefaultPowerCallback"
+    },
+    "80276104": {
+      "to": "802769F0",
+      "basis": "anchored-order",
+      "symbol": "fn_80276104"
+    },
+    "802680F0": {
+      "to": "80268890",
+      "basis": "named",
+      "symbol": "EXIImm"
+    },
+    "80268410": {
+      "to": "80268BB0",
+      "basis": "named",
+      "symbol": "EXIDma"
+    },
+    "80268508": {
+      "to": "80268CA8",
+      "basis": "named",
+      "symbol": "EXISync"
+    },
+    "802693E8": {
+      "to": "80269B88",
+      "basis": "named",
+      "symbol": "EXIUnlock"
+    },
+    "802950D0": {
+      "to": "8029593C",
+      "basis": "named",
+      "symbol": "IPCWriteReg"
+    },
+    "802950C0": {
+      "to": "8029592C",
+      "basis": "named",
+      "symbol": "IPCReadReg"
+    },
+    "80295074": {
+      "to": "802958E0",
+      "basis": "named",
+      "symbol": "IPCInit"
+    },
+    "80295534": {
+      "to": "80295DA0",
+      "basis": "named",
+      "symbol": "IPCCltInit"
+    },
+    "8026B334": {
+      "to": "8026BAD4",
+      "basis": "named",
+      "symbol": "PPCHalt"
+    },
+    "8019D5B0": {
+      "to": "8019D924",
+      "basis": "named",
+      "symbol": "OSPanic"
+    },
+    "80273B38": {
+      "to": "802742E4",
+      "basis": "named",
+      "symbol": "OSResetSystem"
+    },
+    "80277888": {
+      "to": "80278174",
+      "basis": "named",
+      "symbol": "exit"
+    },
+    "80274664": {
+      "to": "80274E10",
+      "basis": "named",
+      "symbol": "__OSThreadInit"
+    },
+    "80270198": {
+      "to": "80270908",
+      "basis": "anchored-order",
+      "symbol": "fn_80270198"
+    },
+    "8029D9C0": {
+      "to": "8029E22C",
+      "basis": "layout-sequence",
+      "symbol": "fn_8029D9C0"
+    },
+    "802A83E4": {
+      "to": "802A8C50",
+      "basis": "layout-sequence",
+      "symbol": "fn_802A83E4"
+    },
+    "8026A5B0": {
+      "to": "8026AD50",
+      "basis": "named",
+      "symbol": "SIInit"
+    },
+    "8026B214": {
+      "to": "8026B9B4",
+      "basis": "named",
+      "symbol": "SISetSamplingRate"
+    },
+    "80273144": {
+      "to": "802738F0",
+      "basis": "named",
+      "symbol": "__OSInitMemoryProtection"
+    },
+    "8026B6E0": {
+      "to": "8026BE80",
+      "basis": "named",
+      "symbol": "OSGetConsoleType"
+    },
+    "80273B08": {
+      "to": "802742B4",
+      "basis": "named",
+      "symbol": "OSGetResetCode"
+    },
+    "802761C0": {
+      "to": "80276AAC",
+      "basis": "named",
+      "symbol": "__OSInitSTM"
+    },
+    "8026C7A0": {
+      "to": "8026CF40",
+      "basis": "named",
+      "symbol": "__OSPSInit"
+    },
+    "800063C8": {
+      "to": "800063C8",
+      "basis": "named",
+      "symbol": "__init_hardware"
+    },
+    "8026B304": {
+      "to": "8026BAA4",
+      "basis": "named",
+      "symbol": "PPCMfhid0"
+    },
+    "8026B30C": {
+      "to": "8026BAAC",
+      "basis": "anchored-order",
+      "symbol": "fn_8026B30C"
+    },
+    "8026B324": {
+      "to": "8026BAC4",
+      "basis": "named",
+      "symbol": "PPCMtdec"
+    },
+    "8026B32C": {
+      "to": "8026BACC",
+      "basis": "anchored-order",
+      "symbol": "fn_8026B32C"
+    },
+    "8026B348": {
+      "to": "8026BAE8",
+      "basis": "named",
+      "symbol": "PPCMtmmcr0"
+    },
+    "8026B350": {
+      "to": "8026BAF0",
+      "basis": "named",
+      "symbol": "PPCMtmmcr1"
+    },
+    "8026B358": {
+      "to": "8026BAF8",
+      "basis": "named",
+      "symbol": "PPCMtpmc1"
+    },
+    "8026B360": {
+      "to": "8026BB00",
+      "basis": "named",
+      "symbol": "PPCMtpmc2"
+    },
+    "8026B368": {
+      "to": "8026BB08",
+      "basis": "named",
+      "symbol": "PPCMtpmc3"
+    },
+    "8026B370": {
+      "to": "8026BB10",
+      "basis": "named",
+      "symbol": "PPCMtpmc4"
+    },
+    "8026B3C0": {
+      "to": "8026BB60",
+      "basis": "named",
+      "symbol": "PPCMfhid2"
+    },
+    "8026B3C8": {
+      "to": "8026BB68",
+      "basis": "named",
+      "symbol": "PPCMthid2"
+    },
+    "8026B3D0": {
+      "to": "8026BB70",
+      "basis": "anchored-order",
+      "symbol": "fn_8026B3D0"
+    },
+    "8026B3DC": {
+      "to": "8026BB7C",
+      "basis": "named",
+      "symbol": "PPCMtwpar"
+    },
+    "8026B3E4": {
+      "to": "8026BB84",
+      "basis": "named",
+      "symbol": "PPCDisableSpeculation"
+    },
+    "8026B414": {
+      "to": "8026BBB4",
+      "basis": "named",
+      "symbol": "PPCMthid4"
+    },
+    "8026E440": {
+      "to": "8026EBB0",
+      "basis": "named",
+      "symbol": "OSReport"
+    },
+    "8026D7D4": {
+      "to": "8026DF74",
+      "basis": "named",
+      "symbol": "DCInvalidateRange"
+    },
+    "8026D800": {
+      "to": "8026DFA0",
+      "basis": "named",
+      "symbol": "DCFlushRange"
+    },
+    "8026D860": {
+      "to": "8026DFD0",
+      "basis": "named",
+      "symbol": "DCFlushRangeNoSync"
+    },
+    "8026D7C0": {
+      "to": "8026DF60",
+      "basis": "named",
+      "symbol": "DCEnable"
+    },
+    "8026D88C": {
+      "to": "8026DFFC",
+      "basis": "named",
+      "symbol": "DCZeroRange"
+    },
+    "8026D8B8": {
+      "to": "8026E028",
+      "basis": "named",
+      "symbol": "ICInvalidateRange"
+    },
+    "8026D8EC": {
+      "to": "8026E05C",
+      "basis": "named",
+      "symbol": "ICFlashInvalidate"
+    },
+    "8026D8FC": {
+      "to": "8026E06C",
+      "basis": "named",
+      "symbol": "ICEnable"
+    },
+    "8026D910": {
+      "to": "8026E080",
+      "basis": "anchored-order",
+      "symbol": "fn_8026D910"
+    },
+    "8026DA80": {
+      "to": "8026E1F0",
+      "basis": "named",
+      "symbol": "__OSCacheInit"
+    },
+    "802759D4": {
+      "to": "802762C0",
+      "basis": "named",
+      "symbol": "OSGetTime"
+    },
+    "802759F4": {
+      "to": "802762E0",
+      "basis": "named",
+      "symbol": "__OSGetSystemTime"
+    },
+    "802733D0": {
+      "to": "80273B7C",
+      "basis": "anchored-order",
+      "symbol": "fn_802733D0"
+    },
+    "8026E058": {
+      "to": "8026E7C8",
+      "basis": "anchored-order",
+      "symbol": "fn_8026E058"
+    },
+    "8027510C": {
+      "to": "802758B8",
+      "basis": "layout-sequence",
+      "symbol": "fn_8027510C"
+    },
+    "804F5270": {
+      "to": "804F6C70",
+      "basis": "named",
+      "symbol": "__OSErrorTable"
+    },
+    "8056D278": {
+      "to": "8056CC58",
+      "basis": "anchored-order",
+      "symbol": "lbl_8056D278"
+    },
+    "80274EA0": {
+      "to": "8027564C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80274EA0"
+    },
+    "802751F0": {
+      "to": "8027599C",
+      "basis": "layout-sequence",
+      "symbol": "fn_802751F0"
+    },
+    "80275660": {
+      "to": "80275F4C",
+      "basis": "layout-sequence",
+      "symbol": "fn_80275660"
+    },
+    "802753C8": {
+      "to": "80275CB4",
+      "basis": "layout-sequence",
+      "symbol": "fn_802753C8"
+    },
+    "8056DB88": {
+      "to": "8056D568",
+      "basis": "named",
+      "symbol": "InterruptHandlerTable"
+    },
+    "80506130": {
+      "to": "80507B30",
+      "basis": "anchored-order",
+      "symbol": "lbl_80506130"
+    },
+    "8056D2A0": {
+      "to": "8056CC80",
+      "basis": "named",
+      "symbol": "SwitchThreadCallback"
+    },
+    "802727DC": {
+      "to": "80272F88",
+      "basis": "anchored-order",
+      "symbol": "fn_802727DC"
+    },
+    "8027283C": {
+      "to": "80272FE8",
+      "basis": "anchored-order",
+      "symbol": "fn_8027283C"
+    },
+    "80272904": {
+      "to": "802730B0",
+      "basis": "anchored-order",
+      "symbol": "fn_80272904"
+    },
+    "8026CB38": {
+      "to": "8026D2D8",
+      "basis": "anchored-order",
+      "symbol": "fn_8026CB38"
+    },
+    "8026CBA8": {
+      "to": "8026D348",
+      "basis": "anchored-order",
+      "symbol": "fn_8026CBA8"
+    },
+    "80270C74": {
+      "to": "802713E4",
+      "basis": "anchored-order",
+      "symbol": "fn_80270C74"
+    },
+    "80270CC8": {
+      "to": "80271438",
+      "basis": "anchored-order",
+      "symbol": "fn_80270CC8"
+    },
+    "80271048": {
+      "to": "802717B8",
+      "basis": "anchored-order",
+      "symbol": "fn_80271048"
+    },
+    "80271428": {
+      "to": "80271B98",
+      "basis": "anchored-order",
+      "symbol": "fn_80271428"
+    },
+    "8026E034": {
+      "to": "8026E7A4",
+      "basis": "named",
+      "symbol": "OSClearContext"
+    },
+    "8026DE0C": {
+      "to": "8026E57C",
+      "basis": "named",
+      "symbol": "OSSetCurrentContext"
+    },
+    "802748F8": {
+      "to": "802750A4",
+      "basis": "anchored-order",
+      "symbol": "fn_802748F8"
+    },
+    "8026DEF4": {
+      "to": "8026E664",
+      "basis": "named",
+      "symbol": "OSLoadContext"
+    },
+    "80006124": {
+      "to": "80006124",
+      "basis": "named",
+      "symbol": "__start"
+    },
+    "801D8D30": {
+      "to": "801D95F8",
+      "basis": "layout-sequence",
+      "symbol": "fn_801D8C4C"
+    },
+    "801D9E94": {
+      "to": "801DA75C",
+      "basis": "layout-sequence",
+      "symbol": "fn_801D9540"
+    },
+    "801A6D30": {
+      "to": "801A70A4",
+      "basis": "layout-sequence",
+      "symbol": "fn_801A6B04"
+    },
+    "8026DE74": {
+      "to": "8026E5E4",
+      "basis": "anchored-order",
+      "symbol": "fn_8026DE74"
+    },
+    "8055531C": {
+      "to": "80556D1C",
+      "basis": "layout-sequence",
+      "symbol": "lbl_805544E0"
+    },
+    "80275A58": {
+      "to": "80276344",
+      "basis": "anchored-order",
+      "symbol": "fn_80275A58"
+    },
+    "8026C8E8": {
+      "to": "8026D088",
+      "basis": "named",
+      "symbol": "InsertAlarm"
+    }
+  }
+}

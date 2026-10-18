@@ -17,6 +17,7 @@
 #include <atomic>
 #include <charconv>
 #include <cstring>
+#include <cstdlib>
 #include <filesystem>
 #include <list>
 #include <memory>
@@ -675,6 +676,13 @@ gfx::TextureHandle load_replacement_texture(const RuntimeTextureKey& key, const 
   handle->isReplacement = true;
   handle->spmMarker = entry.marker;
   gfx::write_texture(*handle, replacement->data);
+  // Opt-in evidence that replacement files reach the GPU, rather than only being indexed.
+  if (std::getenv("SPM_TEXTURE_LOG") != nullptr) {
+    static uint32_t logged = 0;
+    if (logged++ < 16) {
+      Log.info("HD texture loaded: {} -> {}x{}", format_replacement_filename(key), size.width, size.height);
+    }
+  }
   return handle;
 }
 

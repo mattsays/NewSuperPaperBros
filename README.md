@@ -1,5 +1,8 @@
 # New Super Paper Bros.
 
+
+**macOS Apple Silicon preview:** native USA Rev 2 and Europe Rev 1 profiles, Metal rendering, a Mac launcher, HD texture controls and 16:10 display support. See [macOS/PAL documentation](docs/macOS-PAL.md) for build steps, revision details and test limits.
+
 A native PC port of **Super Paper Mario** (Wii, 2007), made by statically recompiling the game's PowerPC code to C++
 with [WiiCompiled](https://github.com/patchzyy/Wiicompiled). No emulator: the game runs as a Windows program.
 

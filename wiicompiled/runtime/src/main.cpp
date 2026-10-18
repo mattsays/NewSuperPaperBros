@@ -1579,6 +1579,16 @@ int RuntimeMain(int argc, char** argv) {
             throw std::runtime_error(auroraInfo.initializationError != nullptr
                 ? auroraInfo.initializationError : "No supported graphics backend is available");
         }
+        // Use the renderer's own readback for repeatable visual checks on every
+        // desktop platform, without capturing or interacting with the desktop.
+        if (const char* capturePath = std::getenv("SPM_CAPTURE_PATH"); capturePath && *capturePath) {
+            const char* frameText = std::getenv("SPM_CAPTURE_FRAME");
+            char* end = nullptr;
+            const unsigned long frame = frameText ? std::strtoul(frameText, &end, 10) : 1200ul;
+            if ((!frameText || (end != frameText && *end == '\0')) && frame < UINT32_MAX) {
+                aurora_request_frame_capture(static_cast<uint32_t>(frame), capturePath);
+            }
+        }
         if (requestedBackend != BACKEND_AUTO && auroraInfo.backend != requestedBackend) {
             RT_LOG(RT_TAG_RUNTIME) << "graphics_api=\"" << backend
                       << "\" is not available on this system; aurora fell back to \""
@@ -1596,8 +1606,10 @@ int RuntimeMain(int argc, char** argv) {
         DisplaySettings::OnFrameBoundary(auroraInfo.windowSize.native_fb_width,
                                          auroraInfo.windowSize.native_fb_height);
         settings_overlay::InitializeRuntimeSettings();
-        static constexpr const char* kAspectNames[] = {"original 4:3", "16:9", "fill", "cinematic 2.39:1"};
-        RT_LOG(RT_TAG_CONFIG) << "display aspect=" << kAspectNames[displaySettings.aspect]
+        static constexpr const char* kAspectNames[] = {"original 4:3", "16:9", "fill", "cinematic 2.39:1", "16:10"};
+        const char* aspectName = displaySettings.aspect >= 0 && displaySettings.aspect < std::size(kAspectNames)
+            ? kAspectNames[displaySettings.aspect] : "custom";
+        RT_LOG(RT_TAG_CONFIG) << "display aspect=" << aspectName
                   << " SCGetAspectRatio=" << (configWidescreen ? 1 : 0)
                   << " render=" << DisplaySettings::LinesForScale(displaySettings.renderScale) << " lines ("
                   << displaySettings.renderScale << "x)"

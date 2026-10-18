@@ -480,6 +480,7 @@ void UpdatePointer(WiiRemoteInput::KpadSample& sample) {
                 const float windowAspect = static_cast<float>(w) / static_cast<float>(h);
                 const float pictureAspect = settings.aspect == DisplaySettings::kAspect4x3    ? 4.0f / 3.0f
                                             : settings.aspect == DisplaySettings::kAspect16x9  ? 16.0f / 9.0f
+                                            : settings.aspect == DisplaySettings::kAspect16x10 ? DisplaySettings::kRatio16x10
                                             : settings.aspect == DisplaySettings::kAspectCinematic
                                                 ? DisplaySettings::kRatioCinematic
                                                 : windowAspect;
@@ -489,6 +490,9 @@ void UpdatePointer(WiiRemoteInput::KpadSample& sample) {
                 const float viewW = std::min(pictureW, pictureH * (DisplaySettings::GameWidescreen() ? 16.0f / 9.0f : 4.0f / 3.0f));
                 pos[0] = (mx - w * 0.5f) / (viewW * 0.5f);
                 pos[1] = (my - h * 0.5f) / (pictureH * 0.5f);
+                if (settings.aspect == DisplaySettings::kAspect16x10 && DisplaySettings::GameWidescreen()) {
+                    pos[1] /= DisplaySettings::kRatio16x10 / (16.0f / 9.0f);
+                }
                 if (buttons & SDL_BUTTON_LMASK) sample.hold |= kWpadA;  // click = A where you point
             }
         }
