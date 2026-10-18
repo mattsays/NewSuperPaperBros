@@ -407,6 +407,10 @@ target_include_directories(mkw_runtime_config_tests PRIVATE
 target_compile_features(mkw_runtime_config_tests PRIVATE cxx_std_20)
 add_test(NAME mkw_runtime_config_tests COMMAND mkw_runtime_config_tests)
 
+add_executable(mkw_projection_aspect_tests "${CMAKE_CURRENT_LIST_DIR}/tests/projection_aspect_tests.cpp")
+target_compile_features(mkw_projection_aspect_tests PRIVATE cxx_std_17)
+add_test(NAME mkw_projection_aspect_tests COMMAND mkw_projection_aspect_tests)
+
 add_executable(mkw_nand_save_tests "${CMAKE_CURRENT_LIST_DIR}/tests/nand_save_tests.cpp")
 target_include_directories(mkw_nand_save_tests PRIVATE "${CMAKE_CURRENT_LIST_DIR}/include")
 target_compile_features(mkw_nand_save_tests PRIVATE cxx_std_17)

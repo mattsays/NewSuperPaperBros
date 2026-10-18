@@ -34,7 +34,7 @@
 struct RuntimeUserConfig {
     std::optional<bool> widescreen;
     std::optional<bool> forceAspect169;
-    std::optional<int32_t> aspectMode;  // 0 original 4:3, 1 16:9, 2 fill the window (DisplaySettings)
+    std::optional<int32_t> aspectMode;  // 0 4:3, 1 16:9, 2 fill, 3 cinematic, 4 16:10 (DisplaySettings)
     std::optional<int32_t> gpuCompat;  // 0 auto (by graphics adapter), 1 on, 2 off (AuroraGpuCompat)
     std::optional<int32_t> windowPosX;
     std::optional<int32_t> windowPosY;
@@ -120,7 +120,11 @@ inline std::filesystem::path PathFromUtf8(std::string_view text) {
 }
 
 inline constexpr const char* kConfigFileName = "Config.toml";
+#if defined(__APPLE__)
+inline constexpr const char* kApplicationDirectoryName = "NewSuperPaperBros";
+#else
 inline constexpr const char* kApplicationDirectoryName = "WiiCompiled";
+#endif
 
 // Portable layout. A directory holding kPortableMarkerFileName is a portable root; every piece of
 // runtime user state (Config.toml, NAND, Cache, Logs) lives in <root>/UserData instead of
@@ -543,7 +547,7 @@ inline RuntimeUserConfig ParseConfigDocument(const toml::value& document) {
 
     config.widescreen = FindConfigValue<bool>(document, "video", "widescreen");
     config.forceAspect169 = FindConfigValue<bool>(document, "video", "force_16_9");
-    if (auto value = FindConfigInt(document, "video", "aspect_mode"); value && *value >= 0 && *value <= 3) {
+    if (auto value = FindConfigInt(document, "video", "aspect_mode"); value && *value >= 0 && *value <= 4) {
         config.aspectMode = *value;
     }
     if (auto value = FindConfigInt(document, "video", "gpu_compat"); value && *value >= 0 && *value <= 2) {

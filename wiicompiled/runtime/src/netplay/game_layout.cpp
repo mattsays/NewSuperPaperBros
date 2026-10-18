@@ -1339,6 +1339,8 @@ View GameView() {
         aspect = 4.0f / 3.0f;
     } else if (settings.aspect == DisplaySettings::kAspectCinematic) {
         aspect = DisplaySettings::kRatioCinematic;
+    } else if (settings.aspect == DisplaySettings::kAspect16x10) {
+        aspect = DisplaySettings::kRatio16x10;
     } else if (settings.aspect == DisplaySettings::kAspect16x9 || w / std::max(h, 1.0f) <= 16.0f / 9.0f) {
         aspect = 16.0f / 9.0f;
     }
@@ -1352,6 +1354,9 @@ View GameView() {
     view.centerX = display.x / 2;
     view.centerY = display.y / 2;
     view.scale = h / 456.0f;
+    if (settings.aspect == DisplaySettings::kAspect16x10 && wide) {
+        view.scale *= DisplaySettings::kRatio16x10 / (16.0f / 9.0f);
+    }
     // The game's layouts keep square pixels on a widened canvas too (display_settings.cpp).
     view.gameScaleX = view.scale;
     return view;

@@ -48,7 +48,8 @@ float RenderLines(float renderScale, int32_t aspect) {
     }
     const float w = static_cast<float>(g_surfaceWidth), h = static_cast<float>(g_surfaceHeight);
     const bool fillsSurface = aspect == kAspectFill && SurfaceWiderThan169();
-    const float pictureAspect = aspect == kAspect4x3 ? 4.0f / 3.0f : aspect == kAspectCinematic ? kRatioCinematic : kRatio16x9;
+    const float pictureAspect = aspect == kAspect4x3 ? 4.0f / 3.0f
+        : aspect == kAspectCinematic ? kRatioCinematic : aspect == kAspect16x10 ? kRatio16x10 : kRatio16x9;
     return fillsSurface ? h : std::min(h, w / pictureAspect);
 }
 
@@ -57,10 +58,10 @@ void ApplyRenderer(const Settings& settings) {
     if (aspect == kAspect4x3) {
         AuroraSetViewportPolicy(AURORA_VIEWPORT_FIT);
         VILockAspectRatio(4, 3);
-    } else if (aspect == kAspectCinematic) {
-        // A 2.39:1 picture, letterboxed on narrower screens; the game draws the wider view into it.
+    } else if (aspect == kAspectCinematic || aspect == kAspect16x10) {
+        // A fixed cinematic or Mac picture; projection scaling keeps geometry undistorted.
         VIUnlockAspectRatio();
-        AuroraSetViewportFixedAspect(kRatioCinematic);
+        AuroraSetViewportFixedAspect(aspect == kAspect16x10 ? kRatio16x10 : kRatioCinematic);
     } else if (aspect == kAspect16x9 || !SurfaceWiderThan169()) {
         // 16:9, or Fill on a surface no wider than 16:9 (the picture is never squashed).
         VIUnlockAspectRatio();
@@ -83,7 +84,7 @@ void ApplyGameCanvas(int32_t aspect) {
     // height with more to the sides, instead of being stretched across it.
     const bool widened = aspect == kAspectFill && SurfaceWiderThan169();
     AuroraSetWidePerspectiveAspect(
-        aspect == kAspectCinematic ? kRatioCinematic
+        aspect == kAspectCinematic ? kRatioCinematic : aspect == kAspect16x10 ? kRatio16x10
         : widened ? static_cast<float>(g_surfaceWidth) / static_cast<float>(g_surfaceHeight) : 0.0f);
 
 }

@@ -15,6 +15,16 @@ bool Require(bool value, const char* message) {
 
 int main() {
     {
+        std::istringstream input("[video]\naspect_mode = 4\n");
+        const auto config = RuntimeConfigFile::ParseConfig(input, "mac-16x10.toml");
+        if (!Require(config.aspectMode == std::optional<int32_t>{4}, "16:10 aspect was not loaded")) return 1;
+    }
+    {
+        std::istringstream input("[video]\naspect_mode = 5\n");
+        const auto config = RuntimeConfigFile::ParseConfig(input, "unsupported-aspect.toml");
+        if (!Require(!config.aspectMode, "unsupported aspect mode was accepted")) return 1;
+    }
+    {
         std::istringstream input("[video]\nmetalfx_spatial_upscaling = true\n");
         const RuntimeUserConfig config = RuntimeConfigFile::ParseConfig(input, "enabled.toml");
         if (!Require(config.metalFxSpatialUpscaling == std::optional<bool>{true},
