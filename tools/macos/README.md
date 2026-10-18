@@ -35,6 +35,8 @@ Both the launcher and nested game app use a native Mac icon converted from the p
 
 Fresh profiles use Metal, windowed display, 16:10 and no frame interpolation. The aspect menu also offers 16:9, original 4:3, Fill and Cinematic, preserving existing choices. The clean disc's audio is used. Razius HD textures can be installed separately with `install-hd-textures.py`; the launcher then offers a persistent toggle. Neither the pack nor the Windows setup script's HQ audio modifications are bundled. This local app is ad-hoc signed, without Developer ID notarization.
 
+In 16:10 the HUD retains its original top inset: health and the flip meter stay on the left, score in the center, and coins on the right. Icons and digits move together without resizing. The adjustment is scoped to the game's HUD draw calls, including nested helpers, and accounts for their perspective depth. Centered dialogs, menus, world geometry and other aspect modes are unaffected.
+
 ## Building
 
 Requirements: Apple Silicon Mac, Apple command line developer tools including Swift, Python 3, CMake, Ninja, .NET 8 SDK, and the official `encounter/nod` nodtool v2.0.0-alpha.10 for macOS ARM64. These are development dependencies; the packaged game does not need .NET, Python, CMake, Ninja or Homebrew installed.

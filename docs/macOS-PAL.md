@@ -43,6 +43,8 @@ La risoluzione interna è selezionabile nel launcher: 480p, 720p, 1080p, 1440p, 
 
 La modalità **16:10 (Mac)** usa `aspect_mode = 4`. Imposta un viewport 16:10 e adatta le proiezioni 16:9 aggiungendo visuale verticale, mantenendo la larghezza. Non allarga gli sprite e non taglia lateralmente l'HUD. I piccoli viewport usati per renderizzare texture restano invariati. Anche puntatore e layout delle interfacce tengono conto della nuova proporzione. Le modalità preesistenti conservano i loro valori 0–3.
 
+L'HUD è inoltre ancorato al bordo superiore: PV e barra del 3D a sinistra, punti al centro, monete a destra. Icone e cifre si spostano insieme, mantenendo dimensioni, spaziatura e margine superiore rispetto al 16:9. La correzione delle matrici è limitata alle chiamate di `hudDisp` e dei suoi aiutanti: non sposta mondo, dialoghi o menu. Poiché SPM disegna l'HUD con una camera prospettica, l'offset dipende dalla profondità per conservare lo stesso allineamento anche fra elementi disegnati su piani diversi. Le animazioni che nascondono l'HUD rimangono libere di oltrepassare il bordo.
+
 ## Texture HD
 
 Il caricamento delle sostituzioni era già presente nel renderer. Il launcher aggiunge attivazione/disattivazione persistente e un comando per installare un pacchetto estratto. `tools/macos/install-hd-textures.py` scarica e verifica il pacchetto DDS 4× di **Razius**, quindi lo installa nel profilo dell'app scelta. L'archivio è fissato con SHA-256, e viene validato prima dell'estrazione.
@@ -76,5 +78,7 @@ I dati del disco, il codice tradotto, le dipendenze scaricate e i runtime genera
 Sul Mac M1 con macOS 26.6.2 sono stati verificati 28/28 riferimenti SDK PAL, traduzione senza istruzioni non supportate o SSA invalida, compilazione nativa ARM64, allineamento REL/BSS, menu originali italiani e caricamento effettivo di texture 4×. I test della proiezione controllano rapporto geometrico, integrità dei bordi HUD, continuità del 16:9/panoramico e assenza di modifiche ai viewport delle texture. Il parser delle impostazioni controlla il nuovo valore 4 e rifiuta valori non supportati.
 
 Un test con dati temporanei ha caricato `he1_01`, mostrato HUD e messaggi italiani, eseguito movimento, salto e passaggio al 3D in modalità 16:10 con texture HD. Il test usa il comando di sviluppo per raggiungere il livello: non dimostra la progressione completa della storia. Nell'app finale sono stati verificati Play, menu F10 con “16:10 (Mac)”, avvio con tastiera e ritorno al launcher dopo l'uscita. I salvataggi di prova non sono installati nel profilo del giocatore.
+
+Il successivo confronto dell'HUD a 1080 linee mostra PV, punti e monete spostati insieme verso l'alto di circa 28 pixel, con il riquadro del dialogo nella stessa posizione. Il test della proiezione verifica anche la conservazione del margine superiore e l'allineamento prospettico a profondità diverse. Il log facoltativo `SPM_HUD_LOG=1` conferma l'offset applicato alle matrici dell'HUD.
 
 È una preview sperimentale: un avvio e test mirati non certificano ogni capitolo, filmato, effetto o controller. Il target di compilazione è macOS 12, ma versioni precedenti a quella provata e Mac Intel non sono stati verificati. L'app locale è firmata ad hoc, senza notarizzazione Developer ID.

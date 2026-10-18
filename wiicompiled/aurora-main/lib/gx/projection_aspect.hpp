@@ -12,4 +12,14 @@ inline ProjectionAspectScale projection_aspect_scale(float source, float target,
   if (target < source) return {1.0f, target / source};
   return {source / target, 1.0f};
 }
+
+// Translate a top-anchored UI group in camera units, preserving its pixel inset
+// when a narrower display gains vertical view. Apply to the HUD model matrix,
+// not the camera: world geometry and centered dialog boxes must stay centered.
+inline float projection_top_anchor_translation(float source, float target, float projectionY, bool screenSized,
+                                               float clipW = 1.0f) {
+  if (!std::isfinite(projectionY) || projectionY <= 0.0f || !std::isfinite(clipW) || clipW <= 0.0f) return 0.0f;
+  const auto scale = projection_aspect_scale(source, target, screenSized);
+  return clipW * (1.0f - scale.vertical) / (projectionY * scale.vertical);
+}
 } // namespace aurora::gx

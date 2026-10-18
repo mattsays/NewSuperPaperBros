@@ -75,6 +75,7 @@ def main():
     # The new SDK splits/replaces these entry points; the public size sequence
     # alone cannot match their changed bodies. These are explicit entry points.
     mapping.update({0x802CC950: 0x802CF418, 0x802CE4C4: 0x802D0C50,
+                    0x8019933C: 0x8019A16C, 0x8019A104: 0x8019AF88,  # hudDisp bounds.
                     0x802DE7B4: 0x802E15A0, 0x80576720: 0x805C7740,
                     0x80557218: 0x805AA218,  # Decoded from PAL Rev 1 BTM_IsDeviceUp.
                     0x8056D0D8: 0x805AE0B8,  # now_seq, named in PAL symbols.

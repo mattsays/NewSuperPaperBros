@@ -54,7 +54,7 @@ def main():
         with engine_info.open('rb') as handle: values = plistlib.load(handle)
         values.update(CFBundleExecutable='nspb-engine', CFBundleIdentifier=bundle_id + '.game',
                       CFBundleName=app_name + ' Game', CFBundleDisplayName=app_name + ' Game',
-                      CFBundleIconFile='AppIcon.icns', CFBundleShortVersionString='1.0.2', CFBundleVersion='10203')
+                      CFBundleIconFile='AppIcon.icns', CFBundleShortVersionString='1.0.2', CFBundleVersion='10204')
         with engine_info.open('wb') as handle: plistlib.dump(values, handle)
         launcher = contents/'MacOS/NSPBLauncher'
         if args.launcher:
@@ -69,7 +69,7 @@ def main():
         values = dict(values)
         values.update(CFBundleExecutable='NSPBLauncher', CFBundleIdentifier=bundle_id,
                       CFBundleName=app_name, CFBundleDisplayName=app_name,
-                      CFBundleShortVersionString='1.0.2', CFBundleVersion='10203', CFBundleIconFile='AppIcon.icns',
+                      CFBundleShortVersionString='1.0.2', CFBundleVersion='10204', CFBundleIconFile='AppIcon.icns',
                       NSHumanReadableCopyright='Unofficial native macOS preview. Bring your own disc.',
                       NSBluetoothAlwaysUsageDescription='Connect a game controller to play.',
                       LSApplicationCategoryType='public.app-category.games')
